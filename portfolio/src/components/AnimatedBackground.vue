@@ -1,31 +1,66 @@
 <template>
   <div class="animated-background">
       <div class="forms">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
-          <img src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
+          <img class="img-form" src="../assets/x.svg" alt="">
       </div>
+      <div id="easteregg">type <b>leite</b></div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'AnimatedBackground',
   props: {
+      name: String
   }
 }
+
+window.addEventListener( 'keypress', (function() {
+    var strToType = 'leite',
+        strTyped = '';
+    return function( event ) {
+        var character = String.fromCharCode(event.which);
+        strTyped += character;
+        if (strToType.indexOf(strTyped) === -1) strTyped = '';
+        else if (strTyped === strToType) {
+            strTyped = '';
+            var elements = document.getElementsByClassName("img-form");
+            for(var i=0; i<elements.length; i++) {
+                elements[i].src = "https://cdn.discordapp.com/attachments/443699822025900033/730487906594193499/milk.svg";
+            }
+        }
+    };
+}()) );
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+#easteregg {
+    position: absolute;
+    bottom: 0.5%;
+    left: 0.5%;
+    color: grey;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    #easteregg {
+        display: none;
+    }
+}
+
 .animated-background {
     position: absolute;
     width: 100%;
