@@ -19,7 +19,7 @@
       <a href="https://www.linkedin.com/in/miguelsolino/" id="navbar-item">
         <img src="../assets/linkedin.svg" alt="Linkedin" height="40px" id="linkedin" ref="linkedin">
       </a>
-      <a href="mailto:miguelsolino@protonmail.com" id="navbar-item">
+      <a href="mailto:miguel.solino@protonmail.com" id="navbar-item">
         <img src="../assets/email.svg" alt="Email" height="40px" id="email" ref="email">
       </a>
       <div id="madeby"><p ref="madeby">© Miguel Solino</p></div>
