@@ -1,0 +1,18 @@
+{
+    "Snow Montain": {
+        "src": "https://cdn.discordapp.com/attachments/744576072435367958/807363101157752842/snow_montain.jpg",
+        "color": "white"
+    },
+    "Library": {
+        "src": "https://cdn.discordapp.com/attachments/744576072435367958/807363122016026664/library_room.jpeg",
+        "color": "orange"
+    },
+    "Futuristic City": {
+        "src": "https://cdn.discordapp.com/attachments/744576072435367958/807363136201949264/futuristic_city.jpg",
+        "color": "dark blue"
+    },
+    "Orange Lights Tree": {
+        "src": "https://cdn.discordapp.com/attachments/425980901344935937/807367476425129994/orange_tree_white_balls.jpeg",
+        "color": "dark blue"
+    }
+}
