@@ -6,7 +6,7 @@ import Walls from '@/components/Walls'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   routes: [
     {
       path: '/',
@@ -17,6 +17,6 @@ export default new Router({
         path: '/walls',
         name: 'Walls',
         component: Walls
-      }
+    }
   ]
 })
