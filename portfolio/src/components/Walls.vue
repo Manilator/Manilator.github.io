@@ -61,7 +61,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 :root {
   --column-space: 24px;
   --row-space: 24px;
