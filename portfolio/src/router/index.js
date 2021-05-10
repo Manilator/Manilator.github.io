@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import MainPage from '@/components/MainPage'
 import Walls from '@/components/Walls'
+import Diet from '@/components/Diet'
 
 Vue.use(Router)
 
@@ -17,6 +18,11 @@ export default new Router({
         path: '/walls',
         name: 'Walls',
         component: Walls
-    }
+    },
+    {
+      path: '/diet',
+      name: 'Diet',
+      component: Diet
+  }
   ]
 })
